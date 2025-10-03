@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-grow</title>
+    <style>
+      /* Flex container */
+      .flex-container {
+        margin-top: 200px;
+        display: flex;
+      }
+      /* Flex item zajedno*/
+      .flex-item {
+        padding: 20px;
+        flex-grow: 1;
+      }
+      /* Flex items posebno - 5 itema*/
+      .flex-item1 {
+        background: deeppink;
+      }
+      .flex-item2 {
+        background: orange;
+        flex-grow: 2;
+      }
+      .flex-item3 {
+        background: lightblue;
+      }
+      .flex-item4 {
+        background: lime;
+        flex-grow: 0;
+      }
+      .flex-item5 {
+        background: olive;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+====================
+Flexbox Demo
+====================
+-->
+    <h2>FLEX-GROW</h2>
+    <section class="flex-container">
+      <div class="flex-item flex-item1">item 1</div>
+      <div class="flex-item flex-item2">item 2</div>
+      <div class="flex-item flex-item3">item 3</div>
+      <div class="flex-item flex-item4">item 4</div>
+      <div class="flex-item flex-item5">item 5</div>
+    </section>
+
+    <h3>Info: Izvor knjiga Mastering CSS - page 400</h3>
+    <p>
+      - <b>FLEX-GROW</b> determines how to distribute that leftover space to the
+      flex items.
+    </p>
+    Dodavano po knjizi (Mastering CSS) pa da se vidi razlika menjanjem
+    vrednosti:
+    <ul>
+      <li>display: flex; - postavljanje layout-a</li>
+      <li>.flex-item {flex-grow: 1;} - svima isto</li>
+      <li>
+        .flex-item2 {flex-grow: 2;} - item 2 dobija duplu kolicinu slobodnog
+        prostora u odnosu na druge
+      </li>
+      <li>
+        .flex-item4 {flex-grow: 0}; - item 4 ne dobija nista od slobodnog
+        prostora - DEFAULT vrednost
+      </li>
+    </ul>
+  </body>
+</html>

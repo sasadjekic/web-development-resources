@@ -8,22 +8,28 @@
   </head>
   <body>
     <header>
-      <img src="images/undraw_code-review_jdgp.svg" alt="Logo" />
-
+      <div class="header-container">
+        <img src="images/undraw_code-review_jdgp.svg" alt="Logo" />
+        <h1>Web Development Resources</h1>
+      </div>
+      
       <nav>
         <ul>
           <li><a href="#javascript">JavaScript</a></li>
           <li><a href="#html">HTML</a></li>
-          <li><a href="#css">CSS</a></li>
+          <li><a href="/css-pieces/homepage.html">CSS pieces</a></li>
           <li><a href="#react">React</a></li>
-          <li><a href="#node">Node</a></li>
+          <li><a href="#images-section">Node</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1>Welcome to Web Development Resources</h1>
       <p>This page provides links to various web development resources.</p>
-      <div id="javascript-section" class="section-unit">
+
+      <div id="up-button"><a href="#top">Up</a></div>
+    <!-- JavaScript Section -->
+    <div id="javascript-section" class="section-unit"></div>
         <h2>JavaScript</h2>
         <ul>
           <li>
@@ -108,7 +114,14 @@
         </ul>
       </div>
 
+    <div id="postman-section" class="section-unit">
       <h2>Postman</h2>
+      <ul>
+        <li><a href="https://www.postman.com/">Postman Official Site</a></li>
+      </ul>
+    </div>
+
+    <div id="images-section" class="section-unit">
       <h2>Images</h2>
       <ul>
         <li>
@@ -118,29 +131,63 @@
           >
         </li>
         <li>
-          <a href="https://unsplash.com/"
+          <a href="https://unsplash.com/" target="_blank" rel="noopener"
             >Unsplash - The internet’s source for visuals.</a
           >
         </li>
         <li>
-          <a href="https://undraw.co/"
+          <a href="https://undraw.co/" target="_blank" rel="noopener"
             >Undraw - Open-source illustrations for any idea you can imagine and
             create.</a
           >
         </li>
       </ul>
-      <h2></h2>
-      <h2>Color</h2>
-      <h2>SVG</h2>
-      <h2>Design</h2>
+    </div>
+      <div class="section-unit">
+        <h2>Color</h2>
+        <ul>
+          <li><a href="#">Color Resources</a></li>
+        </ul>
+      </div>
 
-      <h2>Figma</h2>
+      <div class="section-unit">
+        <h2>SVG</h2>
+        <ul>
+          <li><a href="https://www.sarasoueidan.com/blog/svg-coordinate-systems" target="_blank" rel="noopener"
+            >SVG - svg coordinate systems - info and interactive demo</a
+            >
+          </li>
+        </ul>
+      </div>
 
-      <h2>Aditional Resources</h2>
-      <h2>Useful Links</h2>
-      <ul>
-        <li><a href="https://reactjs.org/">React Library</a></li>
-      </ul>
+      <div class="section-unit">
+        <h2>Design</h2>
+        <ul>
+          <li><a href="#">Design Resources</a></li>
+        </ul>
+      </div>
+
+      <div class="section-unit">
+        <h2>Figma</h2>
+        <ul>
+          <li><a href="https://www.figma.com/" target="_blank" rel="noopener">Figma Official Site</a></li>
+        </ul>
+      </div>
+
+      <div class="section-unit">
+        <h2>Additional Resources</h2>
+        <ul>
+          <li><a href="https://caniuse.com/" target="_blank" rel="noopener">Can I use - testing website features for compatibility</a></li>
+        </ul>
+      </div>
+
+      <div class="section-unit">
+        <h2>Useful Links</h2>
+        <ul>
+          <li><a href="#">Useful Links Collection</a></li>
+        </ul>
+      </div>
+      
     </main>
     <footer>SD team</footer>
   </body>
